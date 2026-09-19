@@ -1,0 +1,85 @@
+.reveal-page {
+  min-height: 100vh;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem 1rem;
+}
+
+.reveal-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.reveal-intro-text {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.3rem, 4vw, 1.8rem);
+  font-style: italic;
+  color: var(--text);
+  max-width: 340px;
+  line-height: 1.6;
+}
+
+.reveal-btn {
+  background: var(--card);
+  color: var(--text);
+  border: 1.5px solid var(--cream-border);
+  border-radius: 50px;
+  padding: 0.9rem 2.4rem;
+  font-family: 'Lora', serif;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  transition: box-shadow 0.2s, background 0.2s;
+  min-height: 52px;
+}
+
+.reveal-btn:hover {
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+.reveal-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1;
+  width: 100%;
+  max-width: 480px;
+  padding-bottom: 3rem;
+}
+
+.reveal-bouquet-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.music-btn {
+  background: none;
+  color: var(--text-muted);
+  font-family: 'Lora', serif;
+  font-size: 0.85rem;
+  border: 1px solid var(--cream-border);
+  border-radius: 50px;
+  padding: 0.5rem 1.2rem;
+  transition: color 0.2s;
+}
+
+.music-btn:hover { color: var(--rose); }
+
+@media (min-width: 768px) {
+  .reveal-main {
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 860px;
+    gap: 3rem;
+  }
+  .reveal-bouquet-wrap { flex: 0 0 auto; }
+}

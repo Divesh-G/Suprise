@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;1,400&family=Special+Elite&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+input, textarea, select, button { box-sizing: border-box; }
+
+:root {
+  --bg: #F7F5E8;
+  --card: #FFFDF7;
+  --text: #222222;
+  --text-muted: #6b6b6b;
+  --rose: #c0392b;
+  --pink: #e8a0b0;
+  --purple: #9b7ec8;
+  --green: #6a9e6a;
+  --orange: #e8834a;
+  --cream-border: #e8e4d0;
+  --shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+html { font-size: 16px; }
+
+body {
+  font-family: 'Lora', Georgia, serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Themes */
+body[data-theme="blush"] { --bg: #fdf0f0; --card: #fff8f8; }
+body[data-theme="lavender"] { --bg: #f3f0f8; --card: #faf8ff; }
+body[data-theme="mint"] { --bg: #f0f7f3; --card: #f8fffc; }
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

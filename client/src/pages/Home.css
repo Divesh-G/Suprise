@@ -1,0 +1,50 @@
+.home-page {
+  min-height: 100vh;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.home-icon { font-size: 3rem; }
+
+.home-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.home-sub {
+  color: var(--text-muted);
+  font-size: 1rem;
+  max-width: 300px;
+  line-height: 1.6;
+}
+
+.home-btn {
+  background: var(--rose);
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.9rem 2.2rem;
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  transition: opacity 0.2s;
+  box-shadow: 0 2px 12px rgba(192,57,43,0.2);
+}
+
+.home-btn:hover { opacity: 0.88; }

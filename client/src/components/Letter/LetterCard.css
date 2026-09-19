@@ -1,0 +1,108 @@
+.letter-card {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--cream-border);
+  border-radius: 4px;
+  padding: 2.5rem 2.2rem 2rem;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: var(--shadow), 2px 2px 0 #e8e4d0;
+  overflow: hidden;
+  font-family: 'Special Elite', 'Courier New', monospace;
+}
+
+.letter-lines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  padding-top: 4.5rem;
+}
+
+.letter-line {
+  height: 1px;
+  background: #e8e4d0;
+  margin: 1.65rem 1.5rem;
+  opacity: 0.6;
+}
+
+.letter-content {
+  position: relative;
+  z-index: 1;
+}
+
+.letter-dear {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--text);
+  margin-bottom: 1.2rem;
+}
+
+.letter-body {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: #333;
+  white-space: pre-wrap;
+  min-height: 4rem;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.8s step-end infinite;
+  color: var(--rose);
+  font-weight: bold;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+.letter-signature {
+  text-align: right;
+  margin-top: 1.5rem;
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.letter-footer {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-family: 'Lora', serif;
+  border-top: 1px solid var(--cream-border);
+  padding-top: 1rem;
+}
+
+.easter-egg-wrap {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.easter-egg-btn {
+  background: none;
+  color: var(--purple);
+  font-family: 'Special Elite', monospace;
+  font-size: 0.85rem;
+  text-decoration: underline dotted;
+  padding: 0.3rem 0.5rem;
+  transition: color 0.2s;
+}
+
+.easter-egg-btn:hover { color: var(--rose); }
+
+.easter-egg-msg {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--rose);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .letter-card { padding: 2rem 1.5rem 1.5rem; }
+  .letter-body { font-size: 0.92rem; }
+}

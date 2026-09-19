@@ -1,0 +1,32 @@
+.bouquet-selector { display: flex; flex-direction: column; gap: 1.2rem; }
+
+.selector-group { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.selector-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-family: 'Lora', serif;
+}
+
+.selector-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+.pill {
+  background: var(--card);
+  border: 1.5px solid var(--cream-border);
+  border-radius: 50px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.82rem;
+  font-family: 'Lora', serif;
+  color: var(--text-muted);
+  transition: all 0.18s;
+}
+
+.pill:hover { border-color: var(--pink); color: var(--text); }
+
+.pill.active {
+  background: var(--pink);
+  border-color: var(--pink);
+  color: #fff;
+}

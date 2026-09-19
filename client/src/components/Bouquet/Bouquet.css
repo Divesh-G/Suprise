@@ -1,0 +1,56 @@
+.bouquet-wrap {
+  position: relative;
+  width: 320px;
+  height: 340px;
+  margin: 0 auto;
+}
+
+.bouquet-flowers {
+  position: absolute;
+  inset: 0;
+  bottom: 80px;
+}
+
+.bouquet-flower-slot {
+  position: absolute;
+  will-change: transform, opacity;
+}
+
+.bouquet-leaves {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 140px;
+  z-index: 2;
+}
+
+.leaves-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.bouquet-wrap-paper {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 120px;
+  z-index: 7;
+}
+
+.wrap-svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 480px) {
+  .bouquet-wrap {
+    width: 260px;
+    height: 280px;
+  }
+  .bouquet-wrap-paper { width: 160px; height: 96px; }
+  .bouquet-leaves { width: 160px; height: 112px; }
+}
